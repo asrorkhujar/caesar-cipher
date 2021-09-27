@@ -44,7 +44,7 @@ function caser(str, amount) {
 
 showRotOptions();
 
-elCaesarForm.addEventListener('input', evt => {
+elCaesarForm.addEventListener('submit', evt => {
   evt.preventDefault();
   const userInput = elCaesarInput.value;
   const userRot = Number(elCaesarRotSelect.value);
