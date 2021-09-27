@@ -18,20 +18,15 @@ function showRotOptions() {
   elCaesarRotSelect.appendChild(elRotFragment);
 };
 
-
 function caser (str, amount) {
-  if (amount < 0) {
-    return caesarShift(str, amount + 26);
-  }
+  let output = "";
 
-  var output = "";
+  for (let i = 0; i < str.length; i++) {
 
-  for (var i = 0; i < str.length; i++) {
-
-    var c = str[i];
+    let c = str[i];
 
     if (c.match(/[a-z]/i)) {
-      var code = str.charCodeAt(i);
+      let code = str.charCodeAt(i);
 
       if (code >= 65 && code <= 90) {
         c = String.fromCharCode(((code - 65 + amount) % 26) + 65);
