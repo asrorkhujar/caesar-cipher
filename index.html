@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>C.C.</title>
+  <title>Caesar Cipher</title>
 
   <link rel="stylesheet" href="css/bootstrap5.min.css">
   <link rel="stylesheet" href="css/styles.css">
 
   <style>
     textarea {
-      height: 500px;
+      height: 450px;
       resize: none;
     }
   </style>
@@ -24,30 +24,32 @@
     <header class="py-3 mb-3 bg-warning rounded-3">
       <h1 class="mb-0 display-5 text-center fw-bold text-capitalize" style="font-family: Stick No Bills;">caesar cipher
       </h1>
+      <h3 class="h4 mb-0 text-center fw-bold text-capitalize text-white">(Encoder)</h3>
     </header>
 
     <section>
       <h2 class="visually-hidden">Caesar Cipher Coder</h2>
       <form class="mb-3 js-coder-form" action="https://echo.htmlacademy.ru" method="GET">
         <div class="row">
-          <div class="col-md-5 d-flex flex-column">
-            <textarea class="form-control js-text-input" id="formTextAreaInput" rows="20" name="text_input"
+          <div class="col-md-5 d-flex flex-column bg-light rounded-3 py-2">
+            <textarea class="form-control js-text-input" id="formTextAreaInput" rows="15" name="text_input"
               placeholder="Enter your text"></textarea>
-            <button class="btn btn-danger btn-sm js-clear-button text-white ms-auto mt-1" type="button">
+            <button class="btn btn-danger btn-sm js-clear-button text-white ms-auto mt-2" type="button">
               <span class="d-flex align-items-center"><span>Clear</span>
                 <span class="ms-2"><img src="img/icon-clear-all.svg" alt="" width="16" height="16"></span>
               </span>
             </button>
           </div>
-          <div class="col-3 col-md-2 mt-3 mt-md-0">
+          <div class="col-3 col-md-2 mt-3 mt-md-0 d-flex flex-column">
             <select class="form-control js-rot-select" name="rot" aria-label="ROT">
               <option value="" disabled selected>ROT by...</option>
             </select>
+            <a class="btn btn-outline-warning text-center mt-3" href="decode.html">Decode</a>
           </div>
-          <div class="col-md-5 mt-3 mt-md-0 d-flex flex-column">
-            <textarea class="form-control js-text-output" id="formTextAreaOutput" rows="20"
+          <div class="col-md-5 mt-3 mt-md-0 d-flex flex-column bg-light rounded-3 py-2">
+            <textarea class="form-control js-text-output" id="formTextAreaOutput" rows="15"
               name="text_output" placeholder="Your result" readonly></textarea>
-            <button class="btn btn-info btn-sm js-copy-button text-white ms-auto mt-1" type="button">
+            <button class="btn btn-info btn-sm js-copy-button text-white ms-auto mt-2" type="button">
               <span class="d-flex align-items-center"><span>Copy</span>
                 <span class="ms-2"><img src="img/icon-copy.svg" alt="" width="16" height="16"></span>
               </span>

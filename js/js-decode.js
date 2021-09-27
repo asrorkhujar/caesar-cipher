@@ -46,6 +46,7 @@ function caser (str, amount) {
 
   elCaesarOutput.value = output;
 };
+
 showRotOptions();
 
 elCaesarForm.addEventListener('input', evt => {
