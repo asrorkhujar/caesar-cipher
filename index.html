@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C.C.</title>
+
+  <link rel="stylesheet" href="css/bootstrap5.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <style>
+    textarea {
+      height: 500px;
+      resize: none;
+    }
+  </style>
+</head>
+
+<body class="bg-secondary">
+
+  <div class="container-xl">
+    <header class="py-3 mb-3 bg-warning rounded-3">
+      <h1 class="mb-0 display-5 text-center fw-bold text-capitalize" style="font-family: Stick No Bills;">caesar cipher
+      </h1>
+    </header>
+
+    <section>
+      <h2 class="visually-hidden">Caesar Cipher Coder</h2>
+      <form class="mb-3 js-coder-form" action="https://echo.htmlacademy.ru" method="GET">
+        <div class="row">
+          <div class="col-md-5 d-flex flex-column">
+            <textarea class="form-control js-text-input" id="formTextAreaInput" rows="20" name="text_input"
+              placeholder="Enter your text"></textarea>
+            <button class="btn btn-danger btn-sm js-clear-button text-white ms-auto mt-1" type="button">
+              <span class="d-flex align-items-center"><span>Clear</span>
+                <span class="ms-2"><img src="img/icon-clear-all.svg" alt="" width="16" height="16"></span>
+              </span>
+            </button>
+          </div>
+          <div class="col-3 col-md-2 mt-3 mt-md-0">
+            <select class="form-control js-rot-select" name="rot" aria-label="ROT">
+              <option value="" disabled selected>ROT by...</option>
+            </select>
+          </div>
+          <div class="col-md-5 mt-3 mt-md-0 d-flex flex-column">
+            <textarea class="form-control js-text-output" id="formTextAreaOutput" rows="20"
+              name="text_output" placeholder="Your result" readonly></textarea>
+            <button class="btn btn-info btn-sm js-copy-button text-white ms-auto mt-1" type="button">
+              <span class="d-flex align-items-center"><span>Copy</span>
+                <span class="ms-2"><img src="img/icon-copy.svg" alt="" width="16" height="16"></span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <script src="js/bootstrap5.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
