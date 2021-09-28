@@ -60,3 +60,7 @@
   font-style: normal;
   font-display: swap;
 }
+
+.site-header {
+margin: -12px;
+}

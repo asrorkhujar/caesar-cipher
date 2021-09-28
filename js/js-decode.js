@@ -44,8 +44,6 @@ function caser(str, amount) {
   elCaesarOutput.value = output;
 };
 
-showRotOptions();
-
 elCaesarForm.addEventListener('submit', evt => {
   evt.preventDefault();
   const userInput = elCaesarInput.value;
@@ -63,8 +61,7 @@ if (elCaesarClearButton) {
   elCaesarClearButton.addEventListener('click', evt => {
     elCaesarInput.value = '';
     elCaesarOutput.value = '';
-    caser(userInput, userRot);
-  })
+  });
 }
 
 //COPY-BUTTON
@@ -72,3 +69,5 @@ elCaesarCopyButton.addEventListener('click', evt => {
   elCaesarOutput.select(elCaesarOutput.value);
   document.execCommand('copy');
 });
+
+showRotOptions();

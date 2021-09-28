@@ -41,7 +41,6 @@ function caser (str, amount) {
 
   elCaesarOutput.value = output;
 };
-showRotOptions();
 
 elCaesarForm.addEventListener('input', evt => {
   const userInput = elCaesarInput.value;
@@ -60,7 +59,6 @@ if (elCaesarClearButton) {
   elCaesarClearButton.addEventListener('click', evt => {
     elCaesarInput.value = '';
     elCaesarOutput.value = '';
-    caser(userInput, userRot);
   })
 }
 
@@ -69,3 +67,5 @@ elCaesarCopyButton.addEventListener('click', evt => {
   elCaesarOutput.select(elCaesarOutput.value);
   document.execCommand('copy');
 });
+
+showRotOptions();
